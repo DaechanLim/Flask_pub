@@ -15,7 +15,7 @@ def about():
     #return "Test"
     return render_template('about.html', hello = "Daechan")
 
-@app.route('/articles')
+@app.route('/articles', methods = ['GET', 'post'])
 def articles():
     print("Success")
     #return "Test"
